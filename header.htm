@@ -1,0 +1,59 @@
+        <header class='met-head navbar-fixed-top' m-id='1' m-type="head_nav">
+            <nav class="navbar navbar-default box-shadow-none head_nav_met_21_7">
+                <div class="container">
+                    <div class="row">
+                        <h1 hidden="">{eyou:global name="web_name" /}</h1>
+                        <div class="navbar-header pull-xs-left">
+                            <a href="{eyou:global name='web_cmsurl' /}/" class="met-logo vertical-align block pull-xs-left p-y-5" title="人力资源公司响应式网站模板">
+                        <div class="vertical-align-middle">
+                            <img src="{eyou:global name="web_logo" /}" alt="{eyou:global name="web_name" /}" /> </div>
+                    </a>
+                        </div>
+                        <button type="button" class="navbar-toggler hamburger hamburger-close collapsed p-x-5 met-nav-toggler" data-target="#met-nav-collapse" data-toggle="collapse">
+                            <span class="sr-only"></span>
+                            <span class="hamburger-bar"></span>
+                        </button>
+                        <!-- 会员注册登录 -->
+                        <!-- 会员注册登录 -->
+                        <div class="collapse navbar-collapse navbar-collapse-toolbar pull-md-right head_nav_met_21_7-head" id="met-nav-collapse">
+                            <ul class="nav navbar-nav navlist">
+                                <li class="nav-item nav-itemli"> 
+                                    <a href="{eyou:global name='web_cmsurl' /}/" title="网站首页" class="nav-link {eyou:eq name='$Think.const.CONTROLLER_NAME' value='Index'}active{/eyou:eq}">
+                                    <span>
+                                    网站首页
+                                    </span>
+                                    </a> 
+                                </li> 
+                                {eyou:channel type='top' currentstyle='on'}
+                                <li class='nav-item nav-itemli'>
+                                    <a href="{$field.typeurl}" title="{$field.typename}" class="nav-link {$field.currentstyle}">
+                                    <span>
+                                        <span class="spanm">{$field.typename}</span>
+                                    </span>
+                                    </a>
+                                </li>
+                                {/eyou:channel}
+
+                                <!--简繁体切换-->
+                                <li class="pull-md-right search-box gj-box">
+                                    <div>
+                                        <form class='sidebar-search' method='get' action="https://show.metinfo.cn/m/mui234/358/search/search.php">
+                                            <input type='hidden' name='lang' value='cn' />
+                                            <input type='hidden' name='class1' value='10001' />
+                                            <div class="form-group">
+                                                <div class="input-search">
+                                                    <button type="submit" class="input-search-btn">
+                                                        <i class="icon wb-search" aria-hidden="true"></i>
+                                                    </button>
+                                                    <input type="text" class="form-control" name="searchword" placeholder="">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
