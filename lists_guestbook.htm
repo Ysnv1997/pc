@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML>
+<html class="">
+
+<head>
+    <title>{$eyou.field.seo_title}</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui" />
+    <meta name="description" content="{eyou:global name='web_description' /}" />
+    <meta name="keywords" content="{eyou:global name='web_keywords' /}" />
+    <meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
+    <link href="https://show.metinfo.cn/m/mui234/358/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/job_cn.css">
+    <!--[if lte IE 9]>
+        <script src="{eyou:global name='web_templets_pc' /}/skin/js/lteie9.js"></script>
+    <![endif]-->
+    <script src="{eyou:global name='web_templets_pc' /}/skin/js/met_temdemo.js"></script>
+</head>
+<!--[if lte IE 8]>
+        <div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+            <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+                <span aria-hidden="true">×</span>
+            </button>
+            你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。</div>
+    <![endif]-->
+
+<body>
+
+    <body class="met-navfixed">
+        {eyou:include file="header.htm" /}
+        <div class="banner_met_21_3 page-bg" data-height='' style='' m-id='2' m-type='banner'>
+            <div class="slick-slide">
+                <img class="cover-image" src="{eyou:global name='web_templets_pc' /}/skin/picture/1532920313.jpg" alt="" data-height='0|0|0' >
+            </div>
+            </div>
+            <div class="subcolumn_nav_met_28_1 met-column-nav" m-id='18' m-type='nocontent'>
+                <div class="container">
+                    <div class="row">
+                        <div class="card">
+                            <div class="sidebar-tile">
+                                <ul class="met-column-nav-ul">
+                                    <li>
+                                        <a href="{$eyou.field.ptypeurl}"  title="全部" class="{$field.currentstyle}" >全部</a>
+                                    </li>
+                                    {eyou:channel type="sonself" currentstyle="active"}
+                                    <li class="">
+                                        <a href="{$field.typeurl}" title="{$field.typename}" class='{$field.currentstyle}'>{$field.typename}</a>
+                                    </li>
+                                    {/eyou:channel}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="news_list_page_met_11_4 met-news" style="background: #f8f8f8;">
+            <section class="feedback_met_36_1 animsition" m-id="52" m-type="nocontent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12">
+                            <div class="column_inner">
+                                <div class="column_containter">
+                                    <div class="qfy-element">
+                                        <div class="qfe_wrapper">
+                                            <div class="left-title">
+                                                <div style="font-size: 16px;">
+                                                    <strong>
+                                                <span>联系我们</span>
+                                            </strong>
+                                                </div>
+                                            </div>
+                                            <div class="contact_us">
+                                                <div>
+                                                    <div class="left-content-title">
+                                                        <span>电话：</span>
+                                                        <p>4000000000</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="left-content-title">
+                                                        <span>地址：</span>
+                                                        <p>湖南省长沙市洋湖总部经济区</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="left-content-title">
+                                                        <span>QQ：</span>
+                                                        <p>00000000</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="left-content-title">
+                                                        <span>旺旺：</span>
+                                                        <p>00000000</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="left-content-title">
+                                                        <span>邮箱：</span>
+                                                        <p>email@email.mt</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ewm">
+                                                    <img src="https://images.metinfo.cn/m/mui406/358/upload/mui406/358/201811/1542360601.png" alt="微信">
+                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8  col-xs-12 feedback_met_36_1-body">
+                                <div m-id="52" m-type="feedback" class="myfeedback">
+
+
+
+                                {eyou:guestbookform type='default'}
+
+                                    <form method="POST"  enctype="multipart/form-data" class="met-form met-form-validation fv-form-bootstrap4 fv-form" enctype="multipart/form-data" action="{$field.action}" novalidate="novalidate">
+
+                                        <div class="form-group">
+                                            <input id="attr_13" name="{$field.attr_13}" class="form-control" type="text" placeholder="{$field.itemname_13}" data-fv-notempty="true" data-fv-message="不能为空" data-fv-field="para7">
+
+                                            <small class="form-control-label" data-fv-validator="notEmpty" data-fv-for="para7" data-fv-result="NOT_VALIDATED" style="display: none;">不能为空</small></div>
+                                        <div class="form-group">
+                                            <input id="attr_14" name="{$field.attr_14}" class="form-control" type="tel" placeholder="{$field.itemname_14}" data-fv-phone="true" data-fv-phone-message="联系电话格式错误" data-fv-notempty="true" data-fv-message="不能为空" data-fv-field="para8">
+
+                                            <small class="form-control-label" data-fv-validator="notEmpty" data-fv-for="para8" data-fv-result="NOT_VALIDATED" style="display: none;">不能为空</small><small class="form-control-label" data-fv-validator="phone" data-fv-for="para8" data-fv-result="NOT_VALIDATED" style="display: none;">联系电话格式错误</small></div>
+                                        <div class="form-group">
+
+                                            <input id="attr_15" name="{$field.attr_15}" class="form-control" type="email" placeholder="{$field.itemname_15}" data-fv-emailaddress="true" data-fv-emailaddress-message="邮箱格式错误" data-fv-notempty="true" data-fv-message="不能为空" data-fv-field="para9">
+
+                                            <small class="form-control-label" data-fv-validator="emailAddress" data-fv-for="para9" data-fv-result="NOT_VALIDATED" style="display: none;">邮箱格式错误</small><small class="form-control-label" data-fv-validator="notEmpty" data-fv-for="para9" data-fv-result="NOT_VALIDATED" style="display: none;">不能为空</small></div>
+                                        <div class="form-group">
+                                            <textarea id="attr_16" name="{$field.attr_16}" class="form-control" placeholder="{$field.itemname_16}" rows="5"></textarea>
+                                        </div>
+                                        <div class="form-group m-b-0">
+                                            <button type="submit" class="btn btn-primary btn-lg btn-block btn-squared">提交</button>
+                                        </div>
+                                        {$field.hidden}
+                                    </form>
+                                {/eyou:guestbookform}
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            </main>
+
+            <!-- /sidebar -->
+        </div>
+        {eyou:include file="footer.htm" /}
+        <button type="button" class="btn btn-icon btn-primary btn-squared back_top_met_16_1 met-scroll-top" hidden m-id='41' m-type='nocontent'>
+            <i class="icon wb-chevron-up" aria-hidden="true"></i>
+        </button>
+        <input type="hidden" name="met_lazyloadbg" value="">
+        <script src="{eyou:global name='web_templets_pc' /}/skin/js/job_cn.js"></script>
+        <script src="{eyou:global name='web_templets_pc' /}/skin/js/lang_json_cn.js"></script>
+    </body>
+
+</html>

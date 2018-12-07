@@ -12,7 +12,7 @@
   <meta name="generator" content="eyoucms" data-variable="{eyou:global name='web_eyoucms' /}" />
     <link href="https://show.metinfo.cn/m/mui234/358/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/basic.css">
-    <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/show_cn.css">
+    <link rel="stylesheet" type="text/css" href="{eyou:global name='web_templets_pc' /}/skin/css/news_cn.css">
     <!--[if lte IE 9]>
 <script src="{eyou:global name='web_templets_pc' /}/skin/js/lteie9.js"></script>
 <![endif]-->
@@ -29,13 +29,14 @@
 <body>
 
     <body class="met-navfixed">
+
         {eyou:include file="header.htm" /}
         <div class="banner_met_21_3 page-bg" data-height='' style='' m-id='2' m-type='banner'>
             <div class="slick-slide">
                 <img class="cover-image" src="{eyou:global name='web_templets_pc' /}/skin/picture/1532920313.jpg" sizes="(max-width: 767px) 767px" alt="" data-height='0|0|0' >
                                                                             </div>
             </div>
-            <div class="subcolumn_nav_met_28_1 met-column-nav" m-id='8' m-type='nocontent'>
+            <div class="subcolumn_nav_met_28_1 met-column-nav" m-id='9' m-type='nocontent'>
                 <div class="container">
                     <div class="row">
                         <div class="card">
@@ -55,24 +56,56 @@
                     </div>
                 </div>
             </div>
-            <div class="show_met_35_1 met-index-body" m-id='7'>
-                <div class="container">
-                    <div class="bos_div">
-                        <div class="fist_box">
-                            <!-- 判断栏目标识-->
-                            <div class="met-editor content-box">
-                                {$eyou.field.content}
-                            </div>
+            <main class="news_list_page_met_11_4 met-news">
+                <div class="container met-news-body">
+                    <div class="row">
+                        <div class="met-news-list">
+                            <ul class="ulstyle met-pager-ajax imagesize" data-scale='400x400' m-id='40'>
+                                <!-- 极简模式 -->
+
+                            
+                            {eyou:list titlelen='40' infolen='190' pagesize='10'}
+                                <li class='border-bottom1'>
+                                    <h4 class=" animation-delay-200" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+                                        <a href="{$field.arcurl}" title="{$field.title}" target=_self>{$field.title}</a>
+                                    </h4>
+                                    <div class="clearfix">
+                                        <p class="des  animation-delay-300" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+                                            {$field.seo_description}...</p>
+           {eyou:arcview aid='$field.aid' id='view'}
+              {eyou:volist name="$view.file_list" id='vo'}
+
+              <a href="{$vo.downurl}" class="more  animation-delay-400" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+                        <span data-title="下载包({$i})">
+                         下载包({$i})</span>
+                    </a>
+              {/eyou:volist}
+            {/eyou:arcview}
+                                    </div>
+                                    <p class="info font-weight-300 animation-delay-500 " data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+                                        <span>{$field.add_time|MyDate='m-d',###}</span>
+                                        <span>/</span>
+                                        <span>{$field.add_time|MyDate='Y',###}</span>
+                                    </p>
+                                </li>
+                                {/eyou:list}
+                            </ul>
+
                         </div>
+                        <div class='m-t-20 text-xs-center hidden-sm-down' m-type="nosysdata">
+                                <div class='met_pager'>
+                                    {eyou:pagelist listitem='pre,pageno,next' listsize='2' /}
+                                </div>
+                            </div>
                     </div>
                 </div>
-            </div>
+            </main>
             {eyou:include file="footer.htm" /}
             <button type="button" class="btn btn-icon btn-primary btn-squared back_top_met_16_1 met-scroll-top" hidden m-id='41' m-type='nocontent'>
                 <i class="icon wb-chevron-up" aria-hidden="true"></i>
             </button>
             <input type="hidden" name="met_lazyloadbg" value="">
-            <script src="{eyou:global name='web_templets_pc' /}/skin/js/show_cn.js"></script>
+            <script src="{eyou:global name='web_templets_pc' /}/skin/js/news_cn.js"></script>
             <script src="{eyou:global name='web_templets_pc' /}/skin/js/lang_json_cn.js"></script>
     </body>
 

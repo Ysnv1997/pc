@@ -41,16 +41,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="sidebar-tile">
-                                <ul class="met-column-nav-ul">
-                                    <li>
-                                        <a href="{$eyou.field.ptypeurl}"  title="全部" class="{$field.currentstyle}" >全部</a>
-                                    </li>
-                                    {eyou:channel type="sonself" currentstyle="active"}
-                                    <li class="">
-                                        <a href="{$field.typeurl}" title="{$field.typename}" class='{$field.currentstyle}'>{$field.typename}</a>
-                                    </li>
-                                    {/eyou:channel}
-                                </ul>
+                                <h1 class="vertical-align-middle">搜索 <strong>{$eyou.field.keywords}</strong> 的结果</h1>
                             </div>
                         </div>
                     </div>
@@ -64,7 +55,7 @@
                                 <!-- 极简模式 -->
 
                             
-                            {eyou:list titlelen='40' infolen='190' pagesize='10'}
+                            {eyou:list pagesize="10" titlelen="20" empty='<li class="media media-lg border-bottom1">没有数据了</li>'}
                                 <li class='border-bottom1'>
                                     <h4 class="  animation-delay-200" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
                                         <a href="{$field.arcurl}" title="{$field.title}" target=_self>{$field.title}</a>
@@ -84,6 +75,8 @@
                                     </p>
                                 </li>
                                 {/eyou:list}
+
+                                
                             </ul>
 
                         </div>

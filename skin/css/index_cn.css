@@ -1969,3 +1969,9 @@ height:100%;
 @media (max-width:767px) {
 	.link_met_11_1 .container { text-align: left; }
 }
+.project-img{
+	width: 100%;
+	height: 283px;
+    background: no-repeat center center;
+    background-size: cover;
+}

@@ -86,9 +86,9 @@
                         <div class="col-md-3">
                             <div class="row">
                                 <aside class="sidebar_met_16_1 met-sidebar panel panel-body m-b-0" boxmh-h m-id='42' m-type='nocontent'>
-                                {eyou:searchform type='default'}
                                     <form class='sidebar-search' method='get' action="{eyou:searchurl /}">
-                                        {$field.hidden}
+                                        <input type='hidden' name='lang' value='cn' />
+                                        <input type='hidden' name='class1' value='3' />
                                         <div class="form-group">
                                             <div class="input-search">
                                                 <button type="submit" class="input-search-btn">
@@ -98,7 +98,6 @@
                                             </div>
                                         </div>
                                     </form>
-                                {/eyou:searchform}
                                     <ul class="sidebar-column list-icons">
                                         {eyou:channel type="sonself" currentstyle="active"}
                                         <li>
@@ -109,7 +108,7 @@
                                     <div class="sidebar-news-list recommend">
                                         <h3 class='font-size-16 m-0'>为你推荐</h3>
                                         <ul class="list-group list-group-bordered m-t-10 m-b-0">
-                                            {eyou:arclist orderby='now' titlelen='30' row='8'}
+                                            {eyou:arclist flag='c' orderby='now' titlelen='30' row='8'}
                                             <li class="list-group-item">
                                                 <a href="{$field.arcurl}" title="{$field.title}" target=_self>{$field.title}</a>
                                             </li>

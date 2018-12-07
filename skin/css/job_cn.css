@@ -1291,3 +1291,10 @@ outline: 5px auto ;
 .pager li a { max-width: 100%; }
 .job_list_page_met_16_1 #met-pager-btn{background: #cc0011; background: ;border-color:#cc0011;border-color:;color: #ffffff;}
 
+.feedback_met_36_1 .ewm img {
+    width: 150px;
+}
+.feedback_met_36_1.animsition{
+	padding-bottom: 60px;
+	padding-top: 30px;
+}
